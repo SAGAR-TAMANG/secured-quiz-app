@@ -114,10 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var typed = new Typed("#autotype", {
   strings: [
-    "Welcome to our medical report summarization tool.",
-    "This tool helps you to understand your medical reports better.",
-    "Easily summarize complex medical information with this AI-powered tool.",
-    "Get key insights from your medical reports in a simplified format.",
+    "Welcome to GuardedForms, where your Google Form is securely embedded.",
+    "GuardedForms: Your Google Forms are locked in—switch tabs and you may lose your progress.",
+    "With GuardedForms, your Google Forms stay safe, but be sure to complete the form before navigating away.",
+    "GuardedForms embeds your Google Form securely. Warning: Changing tabs will prevent form submission.",
+    "Stay focused with GuardedForms: Your Google Form is embedded, but leaving the tab will interrupt your progress.",
+    "GuardedForms ensures secure Google Form submissions—just don’t switch tabs to avoid losing your work.",
+    "Complete your Google Form securely with GuardedForms. Be cautious: switching tabs will lock you out.",    
   ],
   typeSpeed: 25,
   backSpeed: 25,
