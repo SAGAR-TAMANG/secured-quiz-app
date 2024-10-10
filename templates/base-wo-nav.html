@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon2.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block style %}
+    {% endblock %}
+
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loader">
+          <svg viewBox="0 0 80 80">
+              <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+      </div>
+      
+      <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+              <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+      </div>
+      
+      <div class="loader">
+          <svg viewBox="0 0 80 80">
+              <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+      </div>
+    </div>
+    <div id="body-wrapper" style="display: none;">
+
+      {% block content %} {% endblock %}
+      
+    </div>
+
+    <script src="https://kit.fontawesome.com/c2b581aad2.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

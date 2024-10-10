@@ -7,6 +7,6 @@ urlpatterns = [
     path('', main, name="login"),
     path('', main, name="logout"),
     path('', main, name="signup"),
-    path('', main, name="chat"),
+    path('main', main, name="main"),
     path('', main, name="profile"),
 ]
